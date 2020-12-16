@@ -8,7 +8,7 @@ import {NewChallenge} from "./components/NewChallenge";
 function App() {
   return (
     <Switch>
-      <Route exect path="/" component={ChallengesList} />
+      <Route exact path="/" component={ChallengesList} />
       <Route path="/challenge/:challengeId" component={Challenge} />
       <Route path="/new-challenge" component={NewChallenge} />
     </Switch>

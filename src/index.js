@@ -4,12 +4,15 @@ import './mvp.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
+import {ChallengesProvider} from "./components/ChallengesContex";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ChallengesProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ChallengesProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
